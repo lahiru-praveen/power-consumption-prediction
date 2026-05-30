@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code and model asset
 COPY main.py .
-COPY hourly_phase_model.pkl .
+COPY hourly_phase_model_svr.pkl .
 
 # Expose the standard port for Cloud Run
 EXPOSE 8080
