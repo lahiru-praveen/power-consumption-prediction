@@ -18,7 +18,7 @@ app.add_middleware(
 
 # Load the trained model at startup
 try:
-    model = joblib.load("hourly_phase_model.pkl")
+    model = joblib.load("hourly_phase_model_svr.pkl")
 except Exception as e:
     raise RuntimeError(f"Could not load model: {e}")
 
